@@ -105,15 +105,23 @@
       <h2>Featured Projects</h2>
 
       <article class="card featured">
-        <div class="card-media lamaria-animation">
-          <img src="assets/all_trajectories.png" alt="LaMAria trajectories" class="lamaria-img lamaria-trajectories" />
-          <img src="assets/all_control_points.png" alt="LaMAria control points" class="lamaria-img lamaria-control-points" />
+        <div class="card-media lamaria-compare" role="group" aria-label="Trajectories vs Control Points comparison">
+          <img src="assets/all_control_points.png" alt="Control Points" class="lamaria-compare-img lamaria-compare-img-base" />
+          <div class="lamaria-compare-top">
+            <img src="assets/all_trajectories.png" alt="Trajectories" class="lamaria-compare-img lamaria-compare-img-top" />
+          </div>
+          <div class="lamaria-compare-label lamaria-compare-left">Trajectories</div>
+          <div class="lamaria-compare-label lamaria-compare-right">Control Points</div>
+          <div class="lamaria-compare-handle" role="slider" aria-label="Reveal control" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" style="left:50%;">
+            <div class="lamaria-compare-bar"></div>
+            <div class="lamaria-compare-grip" aria-hidden="true"></div>
+          </div>
         </div>
         <div class="card-body">
           <h3>Benchmarking Egocentric Visual-Inertial SLAM at City Scale</h3>
           <p class="muted">SLAM · ARIA · City-Scale Dataset</p>
             
-          <li>A city-scale dataset enables benchmarking of visual-inertial SLAM systems on egocentric videos spanning kilometers, with centimeter-accurate survey-grade control points as pose annotations.</li>
+          <p>A city-scale dataset enables benchmarking of visual-inertial SLAM systems on egocentric videos spanning kilometers, with centimeter-accurate survey-grade control points as pose annotations.</p>
             
 
           <div class="card-cta">
@@ -123,19 +131,19 @@
           </div>
         </div>
       </article>
-
+      
     </section>
-
-    <!-- <section id="featured-pair" class="section">
-
-
-
+    
+    <section id="featured-pair" class="section">
+      
+      
+      
       <div class="featured-pair">
-
-
+        
+        
         <article class="card mid">
           <div class="card-media">
-              <img src="assets/NER.png" alt="Protein structure with variant clusters" />
+            <img src="assets/NER.png" alt="Protein structure with variant clusters" />
           </div>
           <div class="card-body">
             <h3>Information extraction from 100M+ patent texts</h3>
@@ -145,6 +153,7 @@
               <li>Built synthetic training corpora and fine-tuned transformer architectures (BERT variants)</li>
             </ul>
             <div class="card-cta">
+              <a class="btn btn-ghost" href="https://arxiv.org/abs/2512.13608">Paper</a>
               <a class="btn btn-ghost" href="https://christiancadisch.github.io/IBM_Technical_Report.pdf" target="_blank" rel="noopener">Report</a>
             </div>
           </div>
@@ -153,21 +162,22 @@
 
         <article class="card mid">
           <div class="card-media">
-            <video autoplay loop muted playsinline width="100%" poster="assets/8ACT_protein.jpg">
+            <!-- <video autoplay loop muted playsinline width="100%" poster="assets/8ACT_protein.jpg">
               <source src="assets/8ACT.mp4" type="video/mp4">
-              <img src="assets/8ACT.png" alt="Protein structure with variant clusters" />
-            </video>
+              <img src="assets/sara.png" alt="Protein structure with variant clusters" />
+            </video> -->
+            <img src="assets/sara.jpg" alt="The SARA Project" />
           </div>
           <div class="card-body">
-            <h3>3D Protein Variant Clustering with AlphaFold</h3>
-            <p class="muted">Structural ML · Cluster analysis</p>
+            <h3>SARA - Smartphone Assisted River Analysis</h3>
+            <p class="muted">ML on smartphones · Leadership · Product Development</p>
             <ul>
-              <li>Developed spatial clustering algorithm for 3D protein structures</li>
-              <li>Integrated AlphaFold/AlphaMissense predictions with >1M population samples</li>
+              <li>Assembled and managed a team of 8 through the development of a camera for waste-tracking in rivers, The SARA Project.</li>
+              <li>Won 2'000 CHF at The Sustainable Innovation Competition (SIC).</li>
             </ul>
             <div class="card-cta">
-              <a class="btn btn-ghost" href="spatial_genomics.html">Project page</a>
-              <a class="btn btn-ghost" href="https://www.biorxiv.org/content/10.1101/2025.10.07.680947v2">Preprint</a>
+              <a class="btn btn-ghost" href="https://sara-system.ethz.ch">Project page</a>
+              <a class="btn btn-ghost" href="https://drive.google.com/file/d/16LP88lqr72sbIb8VzQ_wEMPNZpENQIo5/view">1min teaser</a>
             </div>
           </div>
         </article>
@@ -177,7 +187,7 @@
 
  
     
-    </section> -->
+    </section>
 
 
     <!-- <section id="other-projects" class="section">
@@ -253,37 +263,39 @@
 
 
 
-
+    
     
     <section id="education" class="section section-list">
       <h2>Education</h2>
       <ul class="stack">
         <li class="stack-item">
-          <img class="stack-logo" src="assets/eth.png" alt="ETH Zürich">
+          <img class="stack-logo" src="assets/harvard.png" alt="harvard medical school - massachusetts general hospital">
           <div class="stack-body">
-            <p class="stack-title">M.Sc. Computer Science</p>
-            <p class="stack-sub">ETH Zürich <span class="stack-meta">Sept. 2021 – Sept. 2024</span></p>
+            <p class="stack-title">Visiting Student Researcher</p>
+            <p class="stack-sub">Harvard Medical School - Massachusetts General Hospital<span class="stack-meta">June. 2025 – Dec. 2025</span></p>
           </div>
         </li>
         <li class="stack-item">
-          <img class="stack-logo" src="assets/imperial.png" alt="Imperial College London">
+          <img class="stack-logo" src="assets/eth.png" alt="ETH Zürich">
+          <div class="stack-body">
+            <p class="stack-title">M.Sc. Robotics, Systems and Control</p>
+            <p class="stack-sub">ETH Zürich <span class="stack-meta"> Since Sept. 2022</span></p>
+          </div>
+        </li>
+        <li class="stack-item">
+          <img class="stack-logo" src="assets/KTH.png" alt="KTH Royal Institute of Technology
+          ">
           <div class="stack-body">
             <p class="stack-title">Exchange Semester</p>
-            <p class="stack-sub">Imperial College London <span class="stack-meta">Oct. 2022 – Dec. 2022</span></p>
-          </div>
-        </li>
-        <li class="stack-item">
-          <img class="stack-logo" src="assets/eth.png" alt="ETH Zürich">
-          <div class="stack-body">
-            <p class="stack-title">B.Sc. Information Technology & Electrical Engineering</p>
-            <p class="stack-sub">ETH Zürich <span class="stack-meta">Sept. 2018 – Aug. 2021</span></p>
+            <p class="stack-sub">KTH Royal Institute of Technology
+              <span class="stack-meta">Sept. 2020 – June. 2021</span></p>
           </div>
         </li>
         <li class="stack-item">
           <img class="stack-logo" src="assets/epfl.png" alt="EPFL">
           <div class="stack-body">
-            <p class="stack-title">Exchange Semester</p>
-            <p class="stack-sub">EPFL Lausanne <span class="stack-meta">Feb. 2021 – Aug. 2021</span></p>
+            <p class="stack-title">B.Sc. Mechanical Engineering</p>
+            <p class="stack-sub">EPFL<span class="stack-meta">Sept. 2018 – Aug. 2021</span></p>
           </div>
         </li>
       </ul>
@@ -291,40 +303,33 @@
 
     <section id="experience" class="section section-list">
       <h2>Professional Experience</h2>
+      <li class="stack-item">
+        <img class="stack-logo" src="assets/cvg.jpeg" alt="CVG Lab">
+        <div class="stack-body">
+          <p class="stack-title">Research Assistant</p>
+          <p class="stack-sub">CVG Lab - ETH Zürich <span class="stack-meta">Aug. 2024 – Mar. 2025</span></p>
+        </div>
+      </li>
+      <li class="stack-item">
+        <img class="stack-logo" src="assets/imai.png" alt="CVG Lab">
+        <div class="stack-body">
+          <p class="stack-title">Machine Learning Research Assistant</p>
+          <p class="stack-sub">IMAI Medtech<span class="stack-meta">Aug. 2024 – Mar. 2025</span></p>
+        </div>
+      </li>
       <ul class="stack">
         <li class="stack-item">
-          <img class="stack-logo" src="assets/mck.jpeg" alt="McKinsey &amp; Company">
+          <img class="stack-logo" src="assets/SCS.jpeg" alt="Sensirion Connected Solutions">
           <div class="stack-body">
-            <p class="stack-title">Digital Consultant (AI / Analytics, Life Sciences)</p>
-            <p class="stack-sub">McKinsey &amp; Company, Switzerland <span class="stack-meta">Oct. 2024 – Present</span></p>
+            <p class="stack-title">Application Engineer Intern</p>
+            <p class="stack-sub">Sensirion Connected Solutions AG <span class="stack-meta">Sept. 2023 – Mar. 2024</span></p>
           </div>
         </li>
         <li class="stack-item">
-          <img class="stack-logo" src="assets/stanford.jpeg" alt="Stanford">
+          <img class="stack-logo" src="assets/taaroa.png" alt="Founderful Campus Fund">
           <div class="stack-body">
-            <p class="stack-title">Visiting Student Researcher</p>
-            <p class="stack-sub">Stanford University<span class="stack-meta">Mar. 2024 – Aug. 2024</span></p>
-          </div>
-        </li>
-        <li class="stack-item">
-          <img class="stack-logo" src="assets/ibm.jpeg" alt="IBM Research">
-          <div class="stack-body">
-            <p class="stack-title">Machine Learning Research Intern</p>
-            <p class="stack-sub">IBM Research <span class="stack-meta">Oct. 2023 – Feb. 2024</span></p>
-          </div>
-        </li>
-        <li class="stack-item">
-          <img class="stack-logo" src="assets/founderful.jpeg" alt="Founderful Campus Fund">
-          <div class="stack-body">
-            <p class="stack-title">Founding Partner</p>
-            <p class="stack-sub">Founderful Campus Fund<span class="stack-meta">Sept. 2022 – Jun. 2022</span></p>
-          </div>
-        </li>
-        <li class="stack-item">
-          <img class="stack-logo" src="assets/mit.png" alt="Massachusetts Institute of Technology">
-          <div class="stack-body">
-            <p class="stack-title">Research Intern</p>
-            <p class="stack-sub">Massachusetts Institute of Technology <span class="stack-meta">Jun. 2019 – Aug. 2019</span></p>
+            <p class="stack-title">Product Development Intern</p>
+            <p class="stack-sub">FLY4ALL - Taaroa<span class="stack-meta">Sept. 2022 – Jun. 2022</span></p>
           </div>
         </li>
       </ul>
@@ -333,11 +338,70 @@
     
   </main>
 
+<script>
+(function() {
+  var cmp = document.querySelector('.lamaria-compare');
+  if (!cmp) return;
+  var topEl = cmp.querySelector('.lamaria-compare-top');
+  var handle = cmp.querySelector('.lamaria-compare-handle');
+  var pos = 50;
+  var dragging = false;
+
+  function setPos(p) {
+    pos = Math.max(0, Math.min(100, p));
+    topEl.style.clipPath = 'inset(0 ' + (100 - pos) + '% 0 0)';
+    handle.style.left = pos + '%';
+    handle.setAttribute('aria-valuenow', Math.round(pos));
+  }
+
+  function move(e) {
+    if (!dragging) return;
+    var rect = cmp.getBoundingClientRect();
+    var x = ('touches' in e) ? e.touches[0].clientX : e.clientX;
+    setPos(((x - rect.left) / rect.width) * 100);
+  }
+
+  function stop() {
+    dragging = false;
+    document.removeEventListener('mousemove', move);
+    document.removeEventListener('mouseup', stop);
+    document.removeEventListener('touchmove', move, { passive: true });
+    document.removeEventListener('touchend', stop);
+  }
+
+  handle.addEventListener('mousedown', function(e) {
+    e.preventDefault();
+    dragging = true;
+    document.addEventListener('mousemove', move);
+    document.addEventListener('mouseup', stop);
+  });
+  handle.addEventListener('touchstart', function(e) {
+    dragging = true;
+    document.addEventListener('touchmove', move, { passive: true });
+    document.addEventListener('touchend', stop);
+  }, { passive: true });
+
+  cmp.addEventListener('click', function(e) {
+    if (e.target === handle || handle.contains(e.target)) return;
+    var rect = cmp.getBoundingClientRect();
+    setPos(((e.clientX - rect.left) / rect.width) * 100);
+  });
+
+  handle.addEventListener('keydown', function(e) {
+    var step = e.shiftKey ? 10 : 5;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); setPos(pos - step); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); setPos(pos + step); }
+  });
+
+  setPos(50);
+})();
+</script>
+
 <footer class="site-footer" role="contentinfo">
   <div class="wrap">
-    <small>© <span id="y"></span> Christian Cadisch · 
-      <a href="books.html">Book recommendations 📚 </a>
-    </small>
+    <small>© <span id="y"></span> Oscar Gentilhomme
+      <!-- <a href="books.html">Book recommendations 📚 </a> -->
+    <!-- </small> -->
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>
