@@ -43,6 +43,34 @@ body {
   border-radius:12px;
   background:#ddd;
 }
+
+/* LaMAria trajectories/control points crossfade animation */
+.lamaria-animation {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 1; /* same as tennis.png (1000x1000) */
+}
+.lamaria-animation .lamaria-img {
+  position: absolute;
+  inset: 0;
+}
+.lamaria-animation .lamaria-trajectories {
+  animation: lamaria-trajectories 8s ease-in-out infinite;
+}
+.lamaria-animation .lamaria-control-points {
+  animation: lamaria-control-points 8s ease-in-out infinite;
+}
+@keyframes lamaria-trajectories {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes lamaria-control-points {
+  0%, 45% { opacity: 0; }
+  50%, 95% { opacity: 1; }
+  100% { opacity: 0; }
+}
 .card-body h3 {margin:0 0 6px; font-size:22px}
 .muted {color:var(--muted); font-size:14px; margin:0 0 8px}
 .card-cta {margin-top:12px; display:flex; gap:10px; flex-wrap:wrap}
